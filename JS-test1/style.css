@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #e8f5e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+}
+.form-section {
+  height: 70%;
+  width: 50%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  background: #a5d6a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+.input-section {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-section form {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#valueInput {
+  width: 60%;
+  height: 50%;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 5px;
+  border: 1px solid #555;
+  box-sizing: border-box;
+}
+
+#valueInput::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+
+.buttons {
+  width: 30%;
+  height: 50%;
+  background-color: #81c784;
+  border: none;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+
+}
+
+.buttons:hover {
+  background-color: #66bb6a;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.bottom-info {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto 0 auto;
+}
+
+.list-section {
+  padding: 12px;
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #555;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.list-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.bottom-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  gap: 5%;
+
+}
+.bottom-buttons button {
+  width: 100%;
+  height: 15%;
+}
+
+.bottom-buttons button:last-child {
+  background-color: #ef9a9a;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .form-section {
+    width: 90%;
+    height: 70%;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .input-section form {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  #valueInput {
+    width: 100%;
+    height: 40px;
+  }
+
+  .buttons {
+    width: 100%;
+    height: 30%;
+  }
+
+  .bottom-info {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .list-section,
+  .bottom-buttons {
+    width: 100%;
+    height: 80%;
+  }
+
+  .bottom-buttons button {
+    height: 20%;
+    margin-bottom: 5px;
+  }
+}
